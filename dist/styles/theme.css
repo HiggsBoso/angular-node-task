@@ -1,0 +1,24 @@
+.page-header {
+  display: inline;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 72;
+}
+
+.create-button {
+  margin-bottom: 20;
+}
+
+.list-header {
+  margin-bottom: 15;
+}
+
+.list {
+  font-size: 20;
+}
+
+.values_row {
+  margin-bottom: 10;
+}
