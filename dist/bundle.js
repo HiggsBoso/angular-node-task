@@ -47416,10 +47416,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var ProductDataSvc = function ProductDataSvc($http) {
-  this.baseUrl = 'https://warm-fjord-42242.herokuapp.com/';
+  this.baseUrl = 'https://warm-fjord-42242.herokuapp.com/products';
 
   this.getProducts = function () {
     return $http.get('' + this.baseUrl).then(function (res) {
+      console.log(res);
       return res.data.products;
     });
   };

@@ -1,9 +1,12 @@
 const ProductDataSvc = function ($http) {
-  this.baseUrl = 'https://warm-fjord-42242.herokuapp.com';
+  this.baseUrl = 'https://warm-fjord-42242.herokuapp.com/products';
 
   this.getProducts = function () {
     return $http.get(`${this.baseUrl}`)
-      .then(res => res.data.products);
+      .then((res) => {
+        console.log(res);
+        return res.data.products;
+      });
   };
 
   this.getProductById = function (id) {
