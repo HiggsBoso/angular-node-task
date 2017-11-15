@@ -13,37 +13,37 @@
 
       <div class="container list">
         <div class="row">
-          <div class="col-lg-2 create-button">
+          <div class="col-lg-2 col-md-2 create-button">
             <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal" ng-click="ctrl.switchToCreateMode()">Create</button>
           </div>
         </div>
         <div class="row list-header">
-          <div class="col-lg-2">
+          <div class="col-lg-2 col-md-2">
             #
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-4">
             Name
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-4">
             Price
           </div>
         </div>
         <hr />
         <div ng-repeat="product in ctrl.products">
           <div class="row values_row">
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-2">
               {{ $index + 1 }}
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4">
               {{ product.name }}
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4">
               {{ product.price }}
             </div>
-            <div class="col-lg-1">
+            <div class="col-lg-1 col-md-1">
               <button class="btn btn-default" data-toggle="modal" data-target="#myModal" ng-click="ctrl.switchToEditMode($index)" >edit</button>
             </div>
-            <div class="col-lg-1">
+            <div class="col-lg-1 col-md-1">
               <button class="btn btn-default" data-toggle="modal" data-target="#deleteModal" ng-click="ctrl.selectProductToDelete($index)">delete</button>
             </div>
           </div>
@@ -62,20 +62,20 @@
             <div class="modal-body">
               <div class="container">
                 <div class="row">
-                  <div class="col-lg-1">
+                  <div class="col-lg-1 col-md-1">
                     Name:
                   </div>
-                  <div class="col-lg-1">
+                  <div class="col-lg-1 col-md-1">
                       <input ng-model="ctrl.newProduct.name" ng-show="ctrl.createMode"/>
                       <input ng-model="ctrl.currentProduct.name" ng-hide="ctrl.createMode"/>
                   </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-1">
+                    <div class="col-lg-1 col-md-1">
                       Price:
                     </div>
-                    <div class="col-lg-1">
+                    <div class="col-lg-1 col-md-1">
                         <input ng-model="ctrl.newProduct.price" ng-show="ctrl.createMode"/>
                         <input ng-model="ctrl.currentProduct.price" ng-hide="ctrl.createMode"/>
                     </div>
