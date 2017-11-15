@@ -1,5 +1,5 @@
 const ProductDataSvc = function ($http) {
-  this.baseUrl = 'http://localhost:3000/products';
+  this.baseUrl = 'https://warm-fjord-42242.herokuapp.com/';
 
   this.getProducts = function () {
     return $http.get(`${this.baseUrl}`)
